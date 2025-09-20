@@ -1,51 +1,77 @@
-# Welcome to your Expo app 👋
+# EcoAlert 🌍📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+EcoAlert is a mobile application built with React Native (Expo) that empowers citizens to report environmental hazards such as waste dumping, pollution, and unsafe ecological practices. The goal is to create a cleaner, safer, and more sustainable environment by enabling real-time reporting and awareness.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+- 📍 Report Hazards: Capture and submit environmental issues with photos, location, and description.  
+- 🗺 Interactive Map: View reports submitted by others in your community.  
+- 🔔 Notifications: Stay updated on urgent alerts or actions taken by authorities.  
+- 👤 User Accounts: Sign up and log in to track your reports.  
+- 📂 Report History: Access your past reports anytime.  
+- 🌐 Community Impact: Promote collective responsibility for the environment.  
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠 Tech Stack
 
-In the output, you'll find options to open the app in a
+- React Native (Expo) – cross-platform app development.  
+- React Navigation – smooth screen transitions and navigation.   
+- Expo Location & Camera APIs – capture media and geolocation data.  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Getting Started
 
-## Get a fresh project
+### Prerequisites
+- Node.js and npm (or yarn) installed  
+- Expo CLI installed globally:  
+  npm install -g expo-cli
 
-When you're ready, run:
+### Installation
+1. Clone the repository:  
+   git clone https://github.com/FaisalMohammedElorm/EcoAlert.git
+   cd EcoAlert
 
-```bash
-npm run reset-project
-```
+2. Install dependencies:  
+   npm install  
+   or  
+   yarn install  
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. Run the app:  
+   expo start  
 
-## Learn more
+4. Scan the QR code with the Expo Go app on your phone to preview.  
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📸 Screenshots 
 
-## Join the community
+_Add some app UI screenshots here to showcase the design._  
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-"# EcoAlert" 
+## 🧑‍🤝‍🧑 Contributing
+
+Contributions are welcome!  
+- Fork the project  
+- Create your feature branch (git checkout -b feature/AmazingFeature)  
+- Commit your changes (git commit -m 'Add some AmazingFeature')  
+- Push to the branch (git push origin feature/AmazingFeature)  
+- Open a Pull Request  
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License – see the LICENSE file for details.  
+
+---
+
+## 🌱 Acknowledgements
+
+- Built with ❤️ and React Native.  
+- Inspired by the need for cleaner and safer communities.  
+- Thanks to the Expo and React Native open-source community.  
