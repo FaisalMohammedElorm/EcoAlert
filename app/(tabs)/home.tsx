@@ -5,8 +5,8 @@ import {
   Camera,
   MapPin,
   MessageSquare,
-  Settings,
-  Truck
+  Truck,
+  User
 } from 'lucide-react-native';
 import React from 'react';
 import {
@@ -63,8 +63,11 @@ export default function HomeScreen() {
           <Text style={styles.greeting}>Hi, {user?.name?.split(' ')[0] || 'User'}</Text>
           <Text style={styles.subGreeting}>Let&apos;s keep Ghana clean today!</Text>
         </View>
-        <TouchableOpacity style={styles.profileButton}>
-          <Settings size={24} color="#666" />
+        <TouchableOpacity 
+          style={styles.profileButton}
+          onPress={() => router.push('/profile')}
+        >
+          <User size={24} color="#666" />
         </TouchableOpacity>
       </View>
 
@@ -141,18 +144,18 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   greeting: {
-    fontSize: 24,
+    fontSize: 35,
     fontWeight: 'bold',
     color: '#333',
   },
   subGreeting: {
-    fontSize: 14,
+    fontSize: 17,
     color: '#666',
     marginTop: 2,
   },
   profileButton: {
-    width: 40,
-    height: 40,
+    width: 60,
+    height: 60,
     borderRadius: 20,
     backgroundColor: '#f5f5f5',
     justifyContent: 'center',
@@ -163,7 +166,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   section: {
-    marginVertical: 20,
+    marginVertical: 72,
   },
   sectionTitle: {
     fontSize: 18,
