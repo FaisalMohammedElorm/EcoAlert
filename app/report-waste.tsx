@@ -1,12 +1,12 @@
+import * as ImagePicker from 'expo-image-picker';
 import { router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import * as ImagePicker from 'expo-image-picker';
-import { 
-  ArrowLeft, 
-  Camera, 
-  MapPin, 
-  Mic,
-  Image as ImageIcon
+import {
+  ArrowLeft,
+  Camera,
+  Image as ImageIcon,
+  MapPin,
+  Mic
 } from 'lucide-react-native';
 import React, { useState } from 'react';
 import {
@@ -160,6 +160,13 @@ export default function ReportWasteScreen() {
           />
         </View>
 
+        {/* OR Divider */}
+        <View style={styles.divider}>
+          <View style={styles.dividerLine} />
+          <Text style={styles.dividerText}>OR</Text>
+          <View style={styles.dividerLine} />
+        </View>
+
         {/* Audio Recording */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Record Audio</Text>
@@ -167,13 +174,6 @@ export default function ReportWasteScreen() {
             <Mic size={24} color="#666" />
             <Text style={styles.audioButtonText}>Tap to record</Text>
           </TouchableOpacity>
-        </View>
-
-        {/* OR Divider */}
-        <View style={styles.divider}>
-          <View style={styles.dividerLine} />
-          <Text style={styles.dividerText}>OR</Text>
-          <View style={styles.dividerLine} />
         </View>
 
         {/* Submit Button */}

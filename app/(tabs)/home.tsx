@@ -26,6 +26,7 @@ export default function HomeScreen() {
     {
       id: 'report',
       title: 'Report Waste',
+      subtitle: 'Snap and Submit',
       icon: Camera,
       color: '#FF6B6B',
       route: '/report-waste'
@@ -33,6 +34,7 @@ export default function HomeScreen() {
     {
       id: 'pickup',
       title: 'Request Pickup',
+      subtitle: 'Schedule a collection',
       icon: Truck,
       color: '#4ECDC4',
       route: '/pickup-schedule'
@@ -40,6 +42,7 @@ export default function HomeScreen() {
     {
       id: 'notifications',
       title: 'Notifications',
+      subtitle: 'Cleanup alerts and tips',
       icon: Bell,
       color: '#45B7D1',
       route: '/notifications'
@@ -47,6 +50,7 @@ export default function HomeScreen() {
     {
       id: 'feedback',
       title: 'Feedback',
+      subtitle: 'Share your thoughts',
       icon: MessageSquare,
       color: '#9C27B0',
       route: '/feedback'
@@ -60,7 +64,7 @@ export default function HomeScreen() {
       {/* Header */}
       <View style={styles.header}>
         <View>
-          <Text style={styles.greeting}>Hi, {user?.name?.split(' ')[0] || 'User'}</Text>
+          <Text style={styles.greeting}>Hi, {user?.name?.split(' ')[0] || 'User'}!</Text>
           <Text style={styles.subGreeting}>Let&apos;s keep Ghana clean today!</Text>
         </View>
         <TouchableOpacity 
@@ -90,6 +94,9 @@ export default function HomeScreen() {
                   >
                     <action.icon size={32} color="white" />
                     <Text style={styles.quickActionText}>{action.title}</Text>
+                    {action.subtitle && (
+                      <Text style={styles.quickActionSubtitle}>{action.subtitle}</Text>
+                    )}
                   </TouchableOpacity>
                 );
               })}
@@ -108,6 +115,9 @@ export default function HomeScreen() {
                   >
                     <action.icon size={32} color="white" />
                     <Text style={styles.quickActionText}>{action.title}</Text>
+                    {action.subtitle && (
+                      <Text style={styles.quickActionSubtitle}>{action.subtitle}</Text>
+                    )}
                   </TouchableOpacity>
                 );
               })}
@@ -141,7 +151,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
     paddingVertical: 16,
-    backgroundColor: 'white',
   },
   greeting: {
     fontSize: 35,
@@ -157,7 +166,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#9DE2A2',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -204,10 +213,19 @@ const styles = StyleSheet.create({
   },
   quickActionText: {
     color: 'white',
-    fontSize: 12,
+    fontSize: 22,
     fontWeight: '600',
     marginTop: 8,
     textAlign: 'center',
+  },
+  quickActionSubtitle: {
+    color: 'white',
+    fontSize: 12,
+    fontWeight: '500',
+    fontStyle: 'italic',
+    marginTop: 5,
+    textAlign: 'center',
+    opacity: 0.8,
   },
   locationCard: {
     backgroundColor: 'white',
