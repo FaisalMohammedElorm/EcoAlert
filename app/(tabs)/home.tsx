@@ -1,13 +1,12 @@
 import { useAuth } from '@/contexts/AuthContext';
 import { router } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import { 
-  Camera, 
-  MapPin, 
-  Bell, 
-  Truck, 
-  BarChart3, 
-  Settings
+import {
+  Bell,
+  Camera,
+  MapPin,
+  MessageSquare,
+  Settings,
+  Truck
 } from 'lucide-react-native';
 import React from 'react';
 import {
@@ -45,11 +44,18 @@ export default function HomeScreen() {
       color: '#45B7D1',
       route: '/notifications'
     },
+    {
+      id: 'feedback',
+      title: 'Feedback',
+      icon: MessageSquare,
+      color: '#9C27B0',
+      route: '/feedback'
+    },
   ];
 
   return (
     <View style={[styles.container, styles.containerWithPadding]}>
-      <StatusBar style="dark" />
+    
       
       {/* Header */}
       <View style={styles.header}>
@@ -67,21 +73,42 @@ export default function HomeScreen() {
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Quick Actions</Text>
           <View style={styles.quickActionsGrid}>
-            {quickActions.map((action) => {
-              const cardStyle = action.color === '#FF6B6B' ? styles.quickActionCardReport :
-                              action.color === '#4ECDC4' ? styles.quickActionCardPickup :
-                              styles.quickActionCardNotifications;
-              return (
-                <TouchableOpacity
-                  key={action.id}
-                  style={[styles.quickActionCard, cardStyle]}
-                  onPress={() => router.push(action.route as any)}
-                >
-                  <action.icon size={32} color="white" />
-                  <Text style={styles.quickActionText}>{action.title}</Text>
-                </TouchableOpacity>
-              );
-            })}
+            <View style={styles.quickActionsRow}>
+              {quickActions.slice(0, 2).map((action) => {
+                const cardStyle = action.color === '#FF6B6B' ? styles.quickActionCardReport :
+                                action.color === '#4ECDC4' ? styles.quickActionCardPickup :
+                                action.color === '#45B7D1' ? styles.quickActionCardNotifications :
+                                styles.quickActionCardFeedback;
+                return (
+                  <TouchableOpacity
+                    key={action.id}
+                    style={[styles.quickActionCard, cardStyle]}
+                    onPress={() => router.push(action.route as any)}
+                  >
+                    <action.icon size={32} color="white" />
+                    <Text style={styles.quickActionText}>{action.title}</Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
+            <View style={styles.quickActionsRow}>
+              {quickActions.slice(2, 4).map((action) => {
+                const cardStyle = action.color === '#FF6B6B' ? styles.quickActionCardReport :
+                                action.color === '#4ECDC4' ? styles.quickActionCardPickup :
+                                action.color === '#45B7D1' ? styles.quickActionCardNotifications :
+                                styles.quickActionCardFeedback;
+                return (
+                  <TouchableOpacity
+                    key={action.id}
+                    style={[styles.quickActionCard, cardStyle]}
+                    onPress={() => router.push(action.route as any)}
+                  >
+                    <action.icon size={32} color="white" />
+                    <Text style={styles.quickActionText}>{action.title}</Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
           </View>
         </View>
 
@@ -92,31 +119,6 @@ export default function HomeScreen() {
             <Text style={styles.locationText}>Auto-Detect Location</Text>
           </View>
         </TouchableOpacity>
-
-        {/* Recent Activity */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Recent Activity</Text>
-          <View style={styles.activityCard}>
-            <View style={styles.activityItem}>
-              <View style={styles.activityIcon}>
-                <Camera size={16} color="#4CAF50" />
-              </View>
-              <View style={styles.activityContent}>
-                <Text style={styles.activityTitle}>Waste Reported</Text>
-                <Text style={styles.activityTime}>2 hours ago</Text>
-              </View>
-            </View>
-            <View style={styles.activityItem}>
-              <View style={styles.activityIcon}>
-                <Truck size={16} color="#FF9800" />
-              </View>
-              <View style={styles.activityContent}>
-                <Text style={styles.activityTitle}>Pickup Scheduled</Text>
-                <Text style={styles.activityTime}>Yesterday</Text>
-              </View>
-            </View>
-          </View>
-        </View>
       </ScrollView>
     </View>
   );
@@ -170,6 +172,10 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   quickActionsGrid: {
+    flexDirection: 'column',
+    gap: 12,
+  },
+  quickActionsRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
@@ -189,6 +195,9 @@ const styles = StyleSheet.create({
   },
   quickActionCardNotifications: {
     backgroundColor: '#45B7D1',
+  },
+  quickActionCardFeedback: {
+    backgroundColor: '#9C27B0',
   },
   quickActionText: {
     color: 'white',
@@ -262,42 +271,5 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '600',
     color: '#333',
-  },
-  activityCard: {
-    backgroundColor: 'white',
-    borderRadius: 12,
-    padding: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 2,
-  },
-  activityItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingVertical: 12,
-  },
-  activityIcon: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: '#f5f5f5',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: 12,
-  },
-  activityContent: {
-    flex: 1,
-  },
-  activityTitle: {
-    fontSize: 16,
-    fontWeight: '500',
-    color: '#333',
-  },
-  activityTime: {
-    fontSize: 12,
-    color: '#666',
-    marginTop: 2,
   },
 });
