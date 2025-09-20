@@ -64,7 +64,7 @@ export default function DashboardScreen() {
         <Text style={styles.headerTitle}>Dashboard</Text>
         <View style={styles.dateSelector}>
           <Calendar size={16} color="#666" />
-          <Text style={styles.dateText}>August 2024</Text>
+          <Text style={styles.dateText}>August 2025</Text>
         </View>
       </View>
 
@@ -131,18 +131,6 @@ export default function DashboardScreen() {
             <Text style={styles.quickActionTitle}>Report New Waste</Text>
             <Text style={styles.quickActionSubtitle}>Help keep your community clean</Text>
           </View>
-          
-          <View style={styles.quickActionCard}>
-            <Text style={styles.quickActionTitle}>Request Pickup</Text>
-            <Text style={styles.quickActionSubtitle}>Schedule waste collection</Text>
-          </View>
-        </View>
-
-        {/* Bottom Navigation Indicator */}
-        <View style={styles.bottomIndicator}>
-          <View style={styles.navDot} />
-          <View style={styles.navDot} />
-          <View style={[styles.navDot, styles.activeNavDot]} />
         </View>
       </ScrollView>
     </View>
@@ -155,19 +143,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f9fa',
   },
   header: {
-    backgroundColor: 'white',
     paddingHorizontal: 20,
-    paddingVertical: 16,
+    paddingVertical: 35,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderBottomWidth: 1,
     borderBottomColor: '#f0f0f0',
+    top: 25
   },
   headerTitle: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: 'bold',
     color: '#333',
+    textAlign: 'center'
   },
   dateSelector: {
     flexDirection: 'row',

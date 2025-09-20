@@ -1,17 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { 
-  CheckCircle, 
-  Truck, 
-  Home, 
-  BarChart3
+import {
+  CheckCircle,
+  Truck
 } from 'lucide-react-native';
 import React from 'react';
 import {
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 
 
@@ -20,6 +16,7 @@ export default function TrackerScreen() {
     {
       id: '1',
       type: 'Organic Waste Collection',
+      location: 'Trinity Avenue',
       status: 'In Progress',
       time: '10:30 AM',
       progress: 75,
@@ -27,6 +24,7 @@ export default function TrackerScreen() {
     {
       id: '2',
       type: 'Plastic Waste Collection',
+      location: 'Kwame Nkrumah Avenue',
       status: 'Pickup Scheduled',
       time: '2:00 PM',
       progress: 25,
@@ -43,7 +41,6 @@ export default function TrackerScreen() {
 
   return (
     <View style={styles.container}>
-      <StatusBar style="dark" />
       
       {/* Header */}
       <View style={styles.header}>
@@ -60,7 +57,10 @@ export default function TrackerScreen() {
           {activeOrders.map((order) => (
             <View key={order.id} style={styles.orderCard}>
               <View style={styles.orderHeader}>
-                <Text style={styles.orderType}>{order.type}</Text>
+                <View style={styles.orderInfo}>
+                  <Text style={styles.orderType}>{order.type}</Text>
+                  <Text style={styles.orderLocation}>{order.location}</Text>
+                </View>
                 <Text style={[
                   styles.orderStatus,
                   order.status === 'In Progress' ? styles.inProgress : styles.scheduled
@@ -114,22 +114,6 @@ export default function TrackerScreen() {
           <Truck size={32} color="#4CAF50" />
           <Text style={styles.arrivalText}>ARRIVING IN 5 MINUTES</Text>
         </View>
-
-        {/* Bottom Navigation */}
-        <View style={styles.bottomNav}>
-          <TouchableOpacity style={styles.navItem}>
-            <Home size={24} color="#666" />
-            <Text style={styles.navLabel}>Home</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.navItem, styles.activeNavItem]}>
-            <Truck size={24} color="#4CAF50" />
-            <Text style={[styles.navLabel, styles.activeNavLabel]}>Tracker</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.navItem}>
-            <BarChart3 size={24} color="#666" />
-            <Text style={styles.navLabel}>Dashboard</Text>
-          </TouchableOpacity>
-        </View>
       </ScrollView>
     </View>
   );
@@ -141,16 +125,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f9fa',
   },
   header: {
-    backgroundColor: 'white',
     paddingHorizontal: 20,
-    paddingVertical: 16,
-    borderBottomWidth: 1,
+    paddingVertical: 45,
     borderBottomColor: '#f0f0f0',
   },
   headerTitle: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: 'bold',
     color: '#333',
+    textAlign: 'center'
   },
   content: {
     flex: 1,
@@ -194,6 +177,15 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
     flex: 1,
+  },
+  orderInfo: {
+    flex: 1,
+  },
+  orderLocation: {
+    fontSize: 14,
+    color: '#666',
+    marginTop: 2,
+    fontStyle: 'italic',
   },
   orderStatus: {
     fontSize: 12,
