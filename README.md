@@ -49,7 +49,21 @@ EcoAlert is a mobile application built with React Native (Expo) that empowers ci
 
 ## 📸 Screenshots 
 
-_Add some app UI screenshots here to showcase the design._  
+
+![IMG-20250920-WA0024](https://github.com/user-attachments/assets/007a5329-3c09-49f2-9e8d-b15345b3c295)
+
+![IMG-20250920-WA0046](https://github.com/user-attachments/assets/297e6942-3a2e-462e-bba5-112ae0a03927)
+
+![IMG-20250920-WA0044](https://github.com/user-attachments/assets/c55d78bb-5432-494a-893c-339cd202f450)
+
+![IMG-20250920-WA0023](https://github.com/user-attachments/assets/61131e3a-dc1b-4add-855e-13f1af0613a9)
+
+![IMG-20250920-WA0045](https://github.com/user-attachments/assets/3629a8df-49d8-4f4f-9956-9f9db112afea)
+
+![IMG-20250920-WA0047](https://github.com/user-attachments/assets/945958b1-df7e-45c2-9007-37e39d51d367)
+
+![IMG-20250920-WA0031](https://github.com/user-attachments/assets/67d671d0-5b06-4e00-a35f-1925b0d4d762)
+
 
 ---
 
