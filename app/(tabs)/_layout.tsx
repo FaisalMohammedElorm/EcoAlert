@@ -1,6 +1,7 @@
 import { Tabs } from "expo-router";
 import { Home, Truck, BarChart3 } from "lucide-react-native";
 import React from "react";
+// import TrackerScreen from '../(tabs)/tracker'
 
 export default function TabLayout() {
   return (
@@ -29,7 +30,7 @@ export default function TabLayout() {
       />
       <Tabs.Screen
         name="tracker"
-        options={{
+        options={{ 
           title: "Tracker",
           tabBarIcon: ({ color, size }) => <Truck color={color} size={size} />,
         }}

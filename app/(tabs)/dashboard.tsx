@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { 
-  TrendingUp, 
-  Recycle, 
+import {
   Award,
-  Calendar
+  Calendar,
+  Recycle,
+  TrendingUp
 } from 'lucide-react-native';
 import React from 'react';
 import {
@@ -14,7 +14,7 @@ import {
   useWindowDimensions,
 } from 'react-native';
 
-export default function DashboardScreen() {
+const DashboardScreen = () => {
   const { width } = useWindowDimensions();
   const stats = [
     { label: 'Total Orders', value: '12', color: '#4CAF50' },
@@ -141,15 +141,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f8f9fa',
+    paddingTop: 50,
   },
   header: {
     paddingHorizontal: 20,
-    paddingVertical: 35,
+    paddingVertical: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     borderBottomColor: '#f0f0f0',
-    top: 25
   },
   headerTitle: {
     fontSize: 25,
@@ -358,3 +358,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#E3F2FD',
   },
 });
+
+export default DashboardScreen

@@ -18,7 +18,7 @@ import {
 } from 'react-native';
 
 
-export default function HomeScreen() {
+const HomeScreen = () => {
   const { user } = useAuth();
 
 
@@ -294,3 +294,5 @@ const styles = StyleSheet.create({
     color: '#333',
   },
 });
+
+export default HomeScreen

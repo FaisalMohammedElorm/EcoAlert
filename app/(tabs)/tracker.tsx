@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 
-export default function TrackerScreen() {
+const TrackerScreen = () => {
   const activeOrders = [
     {
       id: '1',
@@ -23,7 +23,7 @@ export default function TrackerScreen() {
     },
     {
       id: '2',
-      type: 'Plastic Waste Collection',
+      type: 'rogrtic Waste Collection',
       location: 'Kwame Nkrumah Avenue',
       status: 'Pickup Scheduled',
       time: '2:00 PM',
@@ -123,10 +123,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f8f9fa',
+    paddingTop: 50,
   },
   header: {
     paddingHorizontal: 20,
-    paddingVertical: 45,
+    paddingVertical: 20,
     borderBottomColor: '#f0f0f0',
   },
   headerTitle: {
@@ -341,3 +342,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
+
+
+export default TrackerScreen
