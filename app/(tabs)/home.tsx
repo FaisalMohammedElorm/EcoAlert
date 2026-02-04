@@ -1,20 +1,20 @@
 import { useAuth } from '@/contexts/AuthContext';
 import { router } from 'expo-router';
 import {
-  Bell,
-  Camera,
-  MapPin,
-  MessageSquare,
-  Truck,
-  User
+    Bell,
+    Camera,
+    MapPin,
+    MessageSquare,
+    Truck,
+    User
 } from 'lucide-react-native';
 import React from 'react';
 import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 
 
@@ -143,7 +143,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f9fa',
   },
   containerWithPadding: {
-    paddingTop: 44,
+    // paddingTop: 44,
+    paddingBottom: 80,
   },
   header: {
     flexDirection: 'row',

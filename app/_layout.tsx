@@ -14,7 +14,7 @@ function RootLayoutNav() {
     <Stack screenOptions={{ headerBackTitle: "Back" }}>
       <Stack.Screen name="onboarding" options={{ headerShown: false }} />
       <Stack.Screen name="auth" options={{ headerShown: false }} />
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="(tabs)" options={{ headerShown: true }} />
       <Stack.Screen name="report-waste" options={{ headerShown: false }} />
       <Stack.Screen name="pickup-schedule" options={{ headerShown: false }} />
       <Stack.Screen name="feedback" options={{ headerShown: false }} />

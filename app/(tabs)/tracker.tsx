@@ -1,13 +1,13 @@
 import {
-  CheckCircle,
-  Truck
+    CheckCircle,
+    Truck
 } from 'lucide-react-native';
 import React from 'react';
 import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  View
+    ScrollView,
+    StyleSheet,
+    Text,
+    View
 } from 'react-native';
 
 
@@ -124,6 +124,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f8f9fa',
     paddingTop: 50,
+    paddingBottom: 80,
   },
   header: {
     paddingHorizontal: 20,

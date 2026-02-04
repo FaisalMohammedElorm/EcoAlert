@@ -1,17 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import {
-  Award,
-  Calendar,
-  Recycle,
-  TrendingUp
+    Award,
+    Calendar,
+    Recycle,
+    TrendingUp
 } from 'lucide-react-native';
 import React from 'react';
 import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  useWindowDimensions,
+    ScrollView,
+    StyleSheet,
+    Text,
+    View,
+    useWindowDimensions,
 } from 'react-native';
 
 const DashboardScreen = () => {
@@ -142,6 +142,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f8f9fa',
     paddingTop: 50,
+    paddingBottom: 80,
   },
   header: {
     paddingHorizontal: 20,

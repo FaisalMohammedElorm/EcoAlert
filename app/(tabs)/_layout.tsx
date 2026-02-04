@@ -1,7 +1,7 @@
 import { Tabs } from "expo-router";
-import { Home, Truck, BarChart3 } from "lucide-react-native";
+import { BarChart3, Home, Truck } from "lucide-react-native";
 import React from "react";
-// import TrackerScreen from '../(tabs)/tracker'
+import { Platform } from "react-native";
 
 export default function TabLayout() {
   return (
@@ -11,9 +11,21 @@ export default function TabLayout() {
         tabBarInactiveTintColor: '#999',
         headerShown: false,
         tabBarStyle: {
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          elevation: 10,
+          shadowColor: '#000',
+          shadowOffset: { width: 0, height: -3 },
+          shadowOpacity: 0.1,
+          shadowRadius: 3,
           backgroundColor: 'white',
           borderTopWidth: 1,
           borderTopColor: '#f0f0f0',
+          height: Platform.OS === 'ios' ? 85 : 65,
+          paddingBottom: Platform.OS === 'ios' ? 25 : 10,
+          paddingTop: 10,
         },
         tabBarLabelStyle: {
           fontSize: 12,
