@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
 
 ## 📸 Screenshots
 
-![alt text](photo_5_2026-03-05_16-53-38.jpg) ![alt text](photo_1_2026-03-05_16-53-38.jpg) ![alt text](photo_2_2026-03-05_16-53-38.jpg) ![alt text](photo_3_2026-03-05_16-53-38.jpg) ![alt text](photo_4_2026-03-05_16-53-38.jpg)![alt text](image.png)
+![alt text](photo_1_2026-03-05_18-04-24.jpg) ![alt text](photo_2_2026-03-05_18-04-24.jpg) ![alt text](photo_3_2026-03-05_18-04-24.jpg) ![alt text](photo_4_2026-03-05_18-04-24.jpg) ![alt text](photo_5_2026-03-05_18-04-24.jpg) ![alt text](photo_6_2026-03-05_18-04-24.jpg) ![alt text](photo_7_2026-03-05_18-04-24.jpg) ![alt text](photo_8_2026-03-05_18-04-24.jpg) ![alt text](photo_9_2026-03-05_18-04-24.jpg) ![alt text](photo_10_2026-03-05_18-04-24.jpg)
 
 ---
 
