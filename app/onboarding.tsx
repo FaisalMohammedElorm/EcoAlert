@@ -1,14 +1,14 @@
 import { useAuth } from '@/contexts/AuthContext';
 import { router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { Recycle } from 'lucide-react-native';
 import React from 'react';
 import {
-    Dimensions,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  Dimensions,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -29,9 +29,12 @@ export default function OnboardingScreen() {
       <View style={styles.content}>
         <View style={styles.header}>
           <View style={styles.logoContainer}>
-            <Recycle size={80} color="#4CAF50" />
+            <Image 
+              source={require('@/assets/images/EcoAlert_App_Logo.png')} 
+              style={{ width: 150, height: 150 }}
+              resizeMode="contain"
+            />
           </View>
-          <Text style={styles.appName}>EcoAlert</Text>
         </View>
 
         <View style={styles.messageContainer}>
