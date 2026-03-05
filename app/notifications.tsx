@@ -142,6 +142,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     color: '#333',
+    fontFamily: 'Poppins_700Bold',
   },
   placeholder: {
     width: 40,
@@ -159,6 +160,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 16,
+    fontFamily: 'Poppins_700Bold',
   },
   activityCard: {
     backgroundColor: 'white',
@@ -191,15 +193,18 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
     marginBottom: 4,
+    fontFamily: 'Poppins_600SemiBold',
   },
   activityDescription: {
     fontSize: 14,
     color: '#666',
     marginBottom: 4,
+    fontFamily: 'Poppins_400Regular',
   },
   activityTime: {
     fontSize: 12,
     color: '#999',
+    fontFamily: 'Poppins_400Regular',
   },
   statusIndicator: {
     width: 8,
@@ -228,5 +233,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
   },
 });

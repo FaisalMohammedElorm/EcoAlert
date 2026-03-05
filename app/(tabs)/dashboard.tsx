@@ -155,6 +155,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 25,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
     color: '#333',
     textAlign: 'center'
   },
@@ -171,6 +172,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#666',
     fontWeight: '500',
+    fontFamily: 'Poppins_500Medium',
   },
   content: {
     flex: 1,
@@ -198,10 +200,12 @@ const styles = StyleSheet.create({
   statValue: {
     fontSize: 24,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
     marginBottom: 4,
   },
   statLabel: {
     fontSize: 12,
+    fontFamily: 'Poppins_400Regular',
     color: '#666',
     textAlign: 'center',
   },
@@ -211,6 +215,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
     color: '#333',
     marginBottom: 16,
   },
@@ -244,6 +249,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
     color: '#666',
     fontWeight: '500',
+    fontFamily: 'Poppins_500Medium',
   },
   activityCard: {
     backgroundColor: 'white',
@@ -272,11 +278,13 @@ const styles = StyleSheet.create({
   activityTitle: {
     fontSize: 16,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
     color: '#333',
     marginBottom: 4,
   },
   activityValue: {
     fontSize: 14,
+    fontFamily: 'Poppins_400Regular',
     color: '#666',
   },
   quickActionCard: {
@@ -293,11 +301,13 @@ const styles = StyleSheet.create({
   quickActionTitle: {
     fontSize: 16,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
     color: '#333',
     marginBottom: 4,
   },
   quickActionSubtitle: {
     fontSize: 14,
+    fontFamily: 'Poppins_400Regular',
     color: '#666',
   },
   bottomIndicator: {

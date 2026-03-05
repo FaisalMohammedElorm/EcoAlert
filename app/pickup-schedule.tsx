@@ -174,6 +174,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: '#333',
+    fontFamily: 'Poppins_700Bold',
   },
   placeholder: {
     width: 40,
@@ -201,12 +202,14 @@ const styles = StyleSheet.create({
     marginLeft: 12,
     fontSize: 16,
     color: '#666',
+    fontFamily: 'Poppins_400Regular',
   },
   sectionTitle: {
     fontSize: 16,
     fontWeight: '600',
     color: '#333',
     marginBottom: 16,
+    fontFamily: 'Poppins_600SemiBold',
   },
   wasteTypesGrid: {
     flexDirection: 'row',
@@ -254,10 +257,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#666',
     flex: 1,
+    fontFamily: 'Poppins_400Regular',
   },
   wasteTypeLabelSelected: {
     color: '#333',
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
   },
   selectedTypesContainer: {
     flexDirection: 'row',
@@ -274,6 +279,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 12,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
   },
   infoCard: {
     backgroundColor: '#E8F5E8',
@@ -289,6 +295,7 @@ const styles = StyleSheet.create({
     color: '#4CAF50',
     flex: 1,
     fontWeight: '500',
+    fontFamily: 'Poppins_500Medium',
   },
   scheduleButton: {
     backgroundColor: '#4CAF50',
@@ -304,5 +311,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
   },
 });

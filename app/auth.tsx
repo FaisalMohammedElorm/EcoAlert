@@ -1,18 +1,17 @@
 import { useAuth } from '@/contexts/AuthContext';
-import { router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { Leaf } from 'lucide-react-native';
 import React, { useState } from 'react';
 import {
-  Alert,
-  KeyboardAvoidingView,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+    Alert,
+    KeyboardAvoidingView,
+    Platform,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -201,6 +200,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 16,
     fontWeight: '500',
+    fontFamily: 'Poppins_500Medium',
   },
   form: {
     backgroundColor: 'white',
@@ -221,6 +221,7 @@ const styles = StyleSheet.create({
     color: '#666',
     marginBottom: 8,
     letterSpacing: 0.5,
+    fontFamily: 'Poppins_700Bold',
   },
   input: {
     borderWidth: 1,
@@ -230,6 +231,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     fontSize: 16,
     backgroundColor: '#f9f9f9',
+    fontFamily: 'Poppins_400Regular',
   },
   forgotPassword: {
     alignSelf: 'flex-end',
@@ -238,6 +240,7 @@ const styles = StyleSheet.create({
   forgotPasswordText: {
     color: '#4CAF50',
     fontSize: 14,
+    fontFamily: 'Poppins_400Regular',
   },
   submitButton: {
     backgroundColor: '#4CAF50',
@@ -254,6 +257,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     letterSpacing: 1,
+    fontFamily: 'Poppins_700Bold',
   },
   switchContainer: {
     flexDirection: 'row',
@@ -263,10 +267,12 @@ const styles = StyleSheet.create({
   switchText: {
     color: '#666',
     fontSize: 14,
+    fontFamily: 'Poppins_400Regular',
   },
   switchLink: {
     color: '#4CAF50',
     fontSize: 14,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
   },
 });

@@ -1,20 +1,20 @@
 import { useAuth } from '@/contexts/AuthContext';
 import { router } from 'expo-router';
 import {
-    Bell,
-    Camera,
-    MapPin,
-    MessageSquare,
-    Truck,
-    User
+  Bell,
+  Camera,
+  MapPin,
+  MessageSquare,
+  Truck,
+  User
 } from 'lucide-react-native';
 import React from 'react';
 import {
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 
 
@@ -71,7 +71,7 @@ const HomeScreen = () => {
           style={styles.profileButton}
           onPress={() => router.push('/profile')}
         >
-          <User size={24} color="#666" />
+          <User size={24} color="#fff" />
         </TouchableOpacity>
       </View>
 
@@ -156,17 +156,19 @@ const styles = StyleSheet.create({
   greeting: {
     fontSize: 35,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
     color: '#333',
   },
   subGreeting: {
     fontSize: 17,
+    fontFamily: 'Poppins_400Regular',
     color: '#666',
     marginTop: 2,
   },
   profileButton: {
     width: 60,
     height: 60,
-    borderRadius: 20,
+    borderRadius: 30,
     backgroundColor: '#9DE2A2',
     justifyContent: 'center',
     alignItems: 'center',
@@ -176,11 +178,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   section: {
-    marginVertical: 72,
+    marginVertical: 15,
   },
   sectionTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
     color: '#333',
     marginBottom: 16,
   },
@@ -216,6 +219,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 22,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
     marginTop: 8,
     textAlign: 'center',
   },
@@ -223,6 +227,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 12,
     fontWeight: '500',
+    fontFamily: 'Poppins_500Medium',
     fontStyle: 'italic',
     marginTop: 5,
     textAlign: 'center',
@@ -248,6 +253,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#333',
     fontWeight: '500',
+    fontFamily: 'Poppins_500Medium',
   },
   navigationGrid: {
     flexDirection: 'row',
@@ -288,10 +294,12 @@ const styles = StyleSheet.create({
   },
   navIconText: {
     fontSize: 24,
+    fontFamily: 'Poppins_400Regular',
   },
   navTitle: {
     fontSize: 14,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
     color: '#333',
   },
 });

@@ -134,6 +134,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 25,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
     color: '#333',
     textAlign: 'center'
   },
@@ -147,12 +148,14 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
     color: '#333',
     marginBottom: 16,
   },
   subsectionTitle: {
     fontSize: 16,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
     color: '#666',
     marginBottom: 12,
     marginTop: 16,
@@ -177,6 +180,7 @@ const styles = StyleSheet.create({
   orderType: {
     fontSize: 16,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
     color: '#333',
     flex: 1,
   },
@@ -185,6 +189,7 @@ const styles = StyleSheet.create({
   },
   orderLocation: {
     fontSize: 14,
+    fontFamily: 'Poppins_400Regular',
     color: '#666',
     marginTop: 2,
     fontStyle: 'italic',
@@ -192,6 +197,7 @@ const styles = StyleSheet.create({
   orderStatus: {
     fontSize: 12,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 12,

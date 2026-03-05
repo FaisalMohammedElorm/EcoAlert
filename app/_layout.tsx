@@ -1,4 +1,5 @@
 import { AuthProvider } from "@/contexts/AuthContext";
+import { Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold, Poppins_700Bold, useFonts } from '@expo-google-fonts/poppins';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
@@ -20,10 +21,11 @@ function RootLayoutNav() {
         headerTitle: () => (
           <Image 
             source={require('@/assets/images/EcoAlert_App_Logo.png')} 
-            style={{ width: 120, height: 180 }}
-            resizeMode="contain"
+            style={{ width: 120, height: 150, marginTop: 50 }}
+            
           />
         ),
+        headerTitleAlign: 'center',
         headerStyle: {
           backgroundColor: '#f8f9fa'
         }
@@ -38,9 +40,22 @@ function RootLayoutNav() {
 }
 
 export default function RootLayout() {
+  const [fontsLoaded] = useFonts({
+    Poppins_400Regular,
+    Poppins_500Medium,
+    Poppins_600SemiBold,
+    Poppins_700Bold,
+  });
+
   useEffect(() => {
-    SplashScreen.hideAsync();
-  }, []);
+    if (fontsLoaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
 
   return (
     <QueryClientProvider client={queryClient}>

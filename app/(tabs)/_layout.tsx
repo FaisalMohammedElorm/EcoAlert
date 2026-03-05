@@ -26,6 +26,7 @@ export default function TabLayout() {
         tabBarLabelStyle: {
           fontSize: 12,
           fontWeight: '600',
+          fontFamily: 'Poppins_600SemiBold',
         },
       }}
     >

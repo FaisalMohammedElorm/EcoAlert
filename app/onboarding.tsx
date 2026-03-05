@@ -4,11 +4,11 @@ import { StatusBar } from 'expo-status-bar';
 import { Recycle } from 'lucide-react-native';
 import React from 'react';
 import {
-  Dimensions,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
+    Dimensions,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     letterSpacing: 1,
+    fontFamily: 'Poppins_700Bold',
   },
   messageContainer: {
     alignItems: 'center',
@@ -86,6 +87,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: 40,
     marginBottom: 30,
+    fontFamily: 'Poppins_700Bold',
   },
   subtitle: {
     fontSize: 16,
@@ -93,6 +95,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: 24,
     paddingHorizontal: 20,
+    fontFamily: 'Poppins_400Regular',
   },
   getStartedButton: {
     backgroundColor: '#4CAF50',
@@ -107,5 +110,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     letterSpacing: 1,
+    fontFamily: 'Poppins_700Bold',
   },
 });

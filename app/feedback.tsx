@@ -1,20 +1,20 @@
 import { router } from 'expo-router';
 import {
-  ArrowLeft,
-  Send,
-  Star,
-  ThumbsDown,
-  ThumbsUp
+    ArrowLeft,
+    Send,
+    Star,
+    ThumbsDown,
+    ThumbsUp
 } from 'lucide-react-native';
 import React, { useState } from 'react';
 import {
-  Alert,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+    Alert,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 
 export default function FeedbackScreen() {
@@ -191,6 +191,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: '#333',
+    fontFamily: 'Poppins_700Bold',
   },
   placeholder: {
     width: 40,
@@ -208,6 +209,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 16,
+    fontFamily: 'Poppins_700Bold',
   },
   typeGrid: {
     flexDirection: 'row',
@@ -231,6 +233,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '600',
     textAlign: 'center',
+    fontFamily: 'Poppins_600SemiBold',
   },
   starsContainer: {
     flexDirection: 'row',
@@ -247,6 +250,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#666',
     marginTop: 8,
+    fontFamily: 'Poppins_600SemiBold',
   },
   feedbackInput: {
     backgroundColor: 'white',
@@ -257,6 +261,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ddd',
     minHeight: 120,
+    fontFamily: 'Poppins_400Regular',
   },
   quickFeedbackContainer: {
     flexDirection: 'row',
@@ -281,6 +286,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
   },
   submitButton: {
     backgroundColor: '#9C27B0',
@@ -299,5 +305,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
   },
 });

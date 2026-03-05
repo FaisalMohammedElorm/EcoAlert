@@ -2,22 +2,22 @@ import * as ImagePicker from 'expo-image-picker';
 import { router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import {
-  ArrowLeft,
-  Camera,
-  Image as ImageIcon,
-  MapPin,
-  Mic
+    ArrowLeft,
+    Camera,
+    Image as ImageIcon,
+    MapPin,
+    Mic
 } from 'lucide-react-native';
 import React, { useState } from 'react';
 import {
-  Alert,
-  Image,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+    Alert,
+    Image,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -214,6 +214,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: '#333',
+    fontFamily: 'Poppins_700Bold',
   },
   placeholder: {
     width: 40,
@@ -230,6 +231,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
     marginBottom: 16,
+    fontFamily: 'Poppins_600SemiBold',
   },
   photoOptions: {
     flexDirection: 'row',
@@ -254,6 +256,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     color: '#333',
     textAlign: 'center',
+    fontFamily: 'Poppins_500Medium',
   },
   imageContainer: {
     alignItems: 'center',
@@ -274,6 +277,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 14,
     fontWeight: '600',
+    fontFamily: 'Poppins_600SemiBold',
   },
   locationContainer: {
     flexDirection: 'row',
@@ -293,6 +297,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#333',
     minHeight: 40,
+    fontFamily: 'Poppins_400Regular',
   },
   descriptionInput: {
     backgroundColor: 'white',
@@ -306,6 +311,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
+    fontFamily: 'Poppins_400Regular',
   },
   audioButton: {
     backgroundColor: 'white',
@@ -324,6 +330,7 @@ const styles = StyleSheet.create({
     marginLeft: 12,
     fontSize: 16,
     color: '#666',
+    fontFamily: 'Poppins_400Regular',
   },
   divider: {
     flexDirection: 'row',
@@ -340,6 +347,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#666',
     fontWeight: '500',
+    fontFamily: 'Poppins_500Medium',
   },
   submitButton: {
     backgroundColor: '#4CAF50',
@@ -355,5 +363,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
   },
 });
