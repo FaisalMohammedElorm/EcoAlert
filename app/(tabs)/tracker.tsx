@@ -23,7 +23,7 @@ const TrackerScreen = () => {
     },
     {
       id: '2',
-      type: 'rogrtic Waste Collection',
+      type: 'Plastic Waste Collection',
       location: 'Kwame Nkrumah Avenue',
       status: 'Pickup Scheduled',
       time: '2:00 PM',
