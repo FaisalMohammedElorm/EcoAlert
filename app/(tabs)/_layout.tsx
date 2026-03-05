@@ -11,10 +11,6 @@ export default function TabLayout() {
         tabBarInactiveTintColor: '#999',
         headerShown: false,
         tabBarStyle: {
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          right: 0,
           elevation: 10,
           shadowColor: '#000',
           shadowOffset: { width: 0, height: -3 },
@@ -24,8 +20,8 @@ export default function TabLayout() {
           borderTopWidth: 1,
           borderTopColor: '#f0f0f0',
           height: Platform.OS === 'ios' ? 85 : 65,
-          paddingBottom: Platform.OS === 'ios' ? 25 : 10,
-          paddingTop: 10,
+          paddingBottom: Platform.OS === 'ios' ? 20 : 5,
+          paddingTop: 5,
         },
         tabBarLabelStyle: {
           fontSize: 12,
